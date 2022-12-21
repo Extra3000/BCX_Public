@@ -1,0 +1,31 @@
+exports = async function(changeEvent) {
+const fetch = require('node-fetch');
+const https = require('https');
+console.log(1);
+const httpsAgent = new https.Agent({
+    rejectUnauthorized: false,    cert: new Buffer(`-----BEGIN CERTIFICATE-----
+
+`),
+    key: new Buffer(`-----BEGIN PRIVATE KEY-----
+-----END PRIVATE KEY-----`),
+});
+console.log(2);
+var raw = JSON.stringify({
+  "@type": "powerSwitchState",
+  "switchState": "ON"
+});
+console.log(3);
+var requestOptions = {
+  method: 'PUT',
+  headers: {"Content-Type": "application/json"},
+  body: raw,
+  redirect: 'follow',
+  agent: httpsAgent
+};
+console.log(4);
+ try {
+  console.log(JSON.stringify(requestOptions))
+  await fetch("https://10.51.204.107:8444/smarthome/devices/hdm%3AHomeMaticIP%3A3014F711A00004953859E5E2/services/PowerSwitch/state", requestOptions);
+  console.log(5);
+} catch(e) {console.log(e); console.log(6);}
+return 0};
