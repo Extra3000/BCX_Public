@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lightbulb
+* source:	https://sketchfab.com/3d-models/lightbulb-eb9b8ab2aeb84c6eb87be2ad3501705a
+* author:	wewwuworks (https://sketchfab.com/Ensign_Crusher)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lightbulb" (https://sketchfab.com/3d-models/lightbulb-eb9b8ab2aeb84c6eb87be2ad3501705a) by wewwuworks (https://sketchfab.com/Ensign_Crusher) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
